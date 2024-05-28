@@ -4004,12 +4004,12 @@ body {
     color: #fff;
 }
 .project-tabs {
+    left: 50%;
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 .project-tabs img{
-    margin: auto;
     width: 100px;
     height: 100px;
     border-radius: 50%;
