@@ -4009,16 +4009,16 @@ body {
     align-items: center;
     height: 150px;
 }
-.project-tabs img{
+.project-tabs button{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     filter: grayscale(100%);
 }
-.project-tabs img:hover {
+.project-tabs button:hover {
     filter: grayscale(50%);
 }
-.project-tabs img.active {
+.project-tabs button:active {
     filter: grayscale(0%);
 }
 .project {
