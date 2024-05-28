@@ -2,13 +2,11 @@
   <h1> Featured Projects </h1>
 </div>
 <div class="project-tabs">
-  <img class="tablinks" src="{{ "/assets/img/ico_milkinc.png" | prepend: site.baseurl }}" onclick="openProj(event, 'milkinc')">
+  <img class="tablinks" src="{{ "/assets/img/ico_milkinc.png" | prepend: site.baseurl }}" onclick="openProj(event, 'milkinc')" id="defaultOpen">
   <img class="tablinks" src="{{ "/assets/img/ico_ssr.png" | prepend: site.baseurl }}" onclick="openProj(event, 'ssr')">
   <img class="tablinks" src="{{ "/assets/img/ico_slack.png" | prepend: site.baseurl }}" onclick="openProj(event, 'slack')">
   <img class="tablinks" src="{{ "/assets/img/ico_jappo.png" | prepend: site.baseurl }}" onclick="openProj(event, 'jappo')">
 </div>
-<br>
-<br>
 <div id="milkinc" class="project">
   <div class="images-right">
     <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
@@ -18,8 +16,15 @@
     <ul>
       <li> Featured Skills</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>During my time at NoPowerUp, I was entrusted with multiple responsibilities ranging from UI/Gameplay programmer, bridge engineer, and intern supervisor. I also gained a fair amount of experience working in game design, game testing and tool programming.</p>
+    <ul>
+      <li> My experience</li>
+    </ul>
+    <p>Working at NoPowerUp was absolute bliss for me. Despite being a larger-than-average company, it does feel like a big family there, everyone was really friendly and knowledgeable.
+      Milk Farm Tycoon was my very first project at NPU. The moment I finished my internship, I was instantly included in the pre-production team for Milk Farm Tycoon where I had to analyze and implement a complex codebase given by our overseas partner.
+      More than 50% of the game UI was put together by me, this includes every upgrade popup, quest indicators, dialogue/tutorial scenes and time-limited events. I also enjoy working on gameplay features such as the Cow Behaviour System, Player Statistic System and the Lootbox system.
+      I was the go-to guy for almost every bug in the game. My most memorable bug was when due to a change in Unity, our game occasionally fell into soft-lock from time to time and no one on the tester team could accurately replicate it but within half a day, I successfully pinpointed and resolved the bug for good.</p>
+    <a class="project-link" href="https://play.google.com/store/apps/details?id=com.eastsidegames.milkinc&hl=en&gl=US">Check it out</a>
   </div>
 </div>
 
@@ -33,7 +38,7 @@
       <li> Featured Skills</li>
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <a class="project-link" href="https://soiboi121.itch.io/super-space-rhythm">Check it out</a>
   </div>
 </div>
 
@@ -47,7 +52,7 @@
       <li> Featured Skills</li>
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <a class="project-link" href="https://soiboi121.itch.io/slack-slayer">Check it out</a>
   </div>
 </div>
 
@@ -61,22 +66,23 @@
       <li> Featured Skills</li>
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <a class="project-link" href="https://youtu.be/-E8fkhMX3uI">Check it out</a>
   </div>
 </div>
 
 <script>
   function openProj(evt, projectID) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("project");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("project");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(projectID).style.display = "block";
+    evt.currentTarget.className += " active";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(projectID).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+  document.getElementById("defaultOpen").click();
 </script>
