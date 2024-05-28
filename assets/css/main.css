@@ -4010,6 +4010,7 @@ body {
     height: 150px;
 }
 .project-tabs img {
+    border: 4px;
     margin-right: 15px;
     width: 100px;
     height: 100px;
