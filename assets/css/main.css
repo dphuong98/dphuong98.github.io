@@ -4018,7 +4018,7 @@ body {
 .project-tabs img:hover {
     filter: grayscale(50%);
 }
-.project-tabs img:active {
+.project-tabs img.active {
     filter: grayscale(0%);
 }
 .project {
