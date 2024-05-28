@@ -4021,6 +4021,5 @@ body {
     display: none;
 }
 .image-right img {
-    width: 150px;
-    height: 200px;
+    max-width: 650px;
 }
