@@ -4019,8 +4019,6 @@ body {
 .project {
     margin-top: 50px;
     display: none;
-    text-align: justify;
-    text-justify: inter-word;
 }
 .image-right img {
     width: 450px;
