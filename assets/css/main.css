@@ -4009,19 +4009,10 @@ body {
     align-items: center;
     height: 150px;
 }
-.project-tabs button{
-    filter: grayscale(100%);
-}
 .project-tabs img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-}
-.project-tabs button:hover {
-    filter: grayscale(50%);
-}
-.project-tabs button:active {
-    filter: grayscale(0%);
 }
 .project {
     display: none;
