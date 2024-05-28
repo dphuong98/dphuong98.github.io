@@ -4020,11 +4020,11 @@ body {
     margin-top: 50px;
     display: none;
 }
-.image-right img {
-    width: 450px;
-    border-radius: 5%;
-}
 .project p {
     text-align: justify;
     text-justify: inter-word;
+}
+.image-right img {
+    width: 450px;
+    border-radius: 5%;
 }
