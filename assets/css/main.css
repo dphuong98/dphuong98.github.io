@@ -4018,6 +4018,16 @@ body {
     height: 100px;
     border-radius: 50%;
 }
+.project-tabs img:hover {
+    outline: none;
+    border-color: #44a5f5;
+    box-shadow: 0 0 10px #44a5f5;
+}
+.project-tabs img.active {
+    outline: none;
+    border-color: #44a5f5;
+    box-shadow: 0 0 10px #44a5f5;
+}
 .project {
     margin-top: 50px;
     display: none;
