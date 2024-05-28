@@ -4021,5 +4021,10 @@ body {
     display: none;
 }
 .image-right img {
-    max-width: 650px;
+    width: 450px;
+    border-radius: 5%;
+}
+.project p {
+    text-align: justify;
+    text-justify: inter-word;
 }
