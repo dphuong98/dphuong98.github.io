@@ -4004,10 +4004,10 @@ body {
     color: #fff;
 }
 .project-tabs {
-    left: 50%;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
 }
 .project-tabs img{
     width: 100px;
