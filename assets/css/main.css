@@ -4010,10 +4010,12 @@ body {
     height: 150px;
 }
 .project-tabs button{
+    filter: grayscale(100%);
+}
+.project-tabs img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    filter: grayscale(100%);
 }
 .project-tabs button:hover {
     filter: grayscale(50%);
