@@ -4020,3 +4020,7 @@ body {
     margin-top: 50px;
     display: none;
 }
+.image-right img {
+    width: 150px;
+    height: 200px;
+}
