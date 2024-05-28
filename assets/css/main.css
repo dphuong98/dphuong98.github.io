@@ -3958,6 +3958,8 @@ body {
     }
     .images-right img {
         float: right;
+        width: 450px;
+        border-radius: 5%;
     }
     .images-left {
         float: left;
@@ -4019,8 +4021,4 @@ body {
 .project {
     margin-top: 50px;
     display: none;
-}
-.image-right img {
-    width: 450px;
-    border-radius: 5%;
 }
