@@ -4031,4 +4031,9 @@ body {
 .project {
     margin-top: 50px;
     display: none;
+    animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+from {opacity: 0;}
+to {opacity: 1;}
 }
