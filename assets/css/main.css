@@ -4033,6 +4033,10 @@ body {
     display: none;
     animation: fadeEffect 1s;
 }
+.just {
+    text-align: justify;
+    text-justify: inter-word;
+}
 @keyframes fadeEffect {
 from {opacity: 0;}
 to {opacity: 1;}
