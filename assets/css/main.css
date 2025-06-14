@@ -3887,7 +3887,7 @@ sup {
     }
 }
 .tech {
-    margin: 10px;
+    margin-top: 10px;
 }
 .tech img {
     width: 75px;
@@ -4038,7 +4038,7 @@ body {
 }
 .just {
     text-align: justify;
-    text-justify: inter-word;
+    text-justify: auto;
 }
 @keyframes fadeEffect {
 from {opacity: 0;}
