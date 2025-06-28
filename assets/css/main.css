@@ -4038,7 +4038,7 @@ body {
 }
 .just {
     text-align: justify;
-    text-justify: auto;
+    text-justify: inter-word;
 }
 @keyframes fadeEffect {
 from {opacity: 0;}
